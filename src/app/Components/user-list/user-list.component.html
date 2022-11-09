@@ -1,0 +1,7 @@
+List of Users:
+<select (change)="changeUserId($event.target)">
+  <option *ngFor="let user of userData" [value]="user.id">
+    {{ user.id }} - {{ user.name }}
+  </option>
+</select>
+<app-user-posts [userId]="uid"></app-user-posts>
